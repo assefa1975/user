@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:munit="http://www.mulesoft.org/schema/mule/munit" xmlns:munit-tools="http://www.mulesoft.org/schema/mule/munit-tools"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xsi:schemaLocation="
+		http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+		http://www.mulesoft.org/schema/mule/munit http://www.mulesoft.org/schema/mule/munit/current/mule-munit.xsd
+		http://www.mulesoft.org/schema/mule/munit-tools  http://www.mulesoft.org/schema/mule/munit-tools/current/mule-munit-tools.xsd">
+	<munit:config name="new-test-suite.xml" />
+	<munit:test name="new-test-suite-put:\users:user-configTest" doc:id="f2da8b47-cc63-4d29-8fbf-dbc2dbc965b6" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to put:\users:user-config" doc:id="854ab87f-551f-42e5-ac2b-ed0f9a10ded5" name="put:\users:user-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-delete:\users\(id):user-configTest" doc:id="9680b238-32b5-4828-bddc-ca61bad40278" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to delete:\users\(id):user-config" doc:id="68ef4ae7-349a-4121-9e4c-a2eaefcbdb9a" name="delete:\users\(id):user-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-get:\users:user-configTest" doc:id="27a88146-44c2-4d71-8dae-005b31703e62" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\users:user-config" doc:id="eeb4ec83-a82b-4dbd-8889-471f6b8fd8cc" name="get:\users:user-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-get:\users\(id):user-configTest" doc:id="d758f7d6-9245-4097-b3e8-e008318e375b" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to get:\users\(id):user-config" doc:id="d2e58a9a-86a0-44ef-9bd4-e647db4046bf" name="get:\users\(id):user-config"/>
+		</munit:execution>
+	</munit:test>
+	<munit:test name="new-test-suite-post:\users:user-configTest" doc:id="ceee1f43-792f-43f2-980c-9e43315fc923" description="Test">
+		<munit:execution >
+			<flow-ref doc:name="Flow-ref to post:\users:user-config" doc:id="df55fd7c-ed29-4377-9bee-ab0f79bc7917" name="post:\users:user-config"/>
+		</munit:execution>
+	</munit:test>
+
+
+</mule>
